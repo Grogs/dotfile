@@ -53,7 +53,6 @@ zmodload -a zsh/zprof zprof
 zmodload -ap zsh/mapfile mapfile
 
 
-export PATH=/Users/grogs/scala/bin:$PATH
 
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
@@ -181,6 +180,9 @@ zstyle '*' single-ignored show
 export RUBYOPT=rubygems
 
 export PATH=/opt/local/libexec/gnubin:$PATH
-export PATH=~/Play20:$PATH
+export PATH=~/bin/Play20:$PATH
 export PATH=/Users/grogs/bin:$PATH
 source /Users/grogs/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+#dircolors
+eval `dircolors -b $HOME/.dircolors`
