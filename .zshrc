@@ -196,7 +196,12 @@ preexec () {
     a=$(print -Pn "$a" | tr -d "\t\n\v\f\r")  # remove fancy whitespace
     a=${(V)a//\%/\%\%}  # escape non-visibles and print specials
 
-    print -Pn "\ek%-3~ $a\e\\" # set screen title.  Fix vim: ".
+    case "$TERM" in
+        screen|screen.rxvt)
+
+            print -Pn "\ek%-3~ $a\e\\" # set screen title.  Fix vim: ".
+            ;;
+    esac
 
     #echo -ne "\ek${1%% *}\e\\"
 }
