@@ -186,3 +186,17 @@ source /Users/grogs/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #dircolors
 eval `dircolors -b $HOME/.dircolors`
+
+#automatically change screen title to running program name
+preexec () {
+    local a=${${1## *}[(w)1]}  # get the command
+    local b=${a##*\/}   # get the command basename
+    a="${b}${1#$a}"     # add back the parameters
+    a=${a//\%/\%\%}     # escape print specials
+    a=$(print -Pn "$a" | tr -d "\t\n\v\f\r")  # remove fancy whitespace
+    a=${(V)a//\%/\%\%}  # escape non-visibles and print specials
+
+    print -Pn "\ek%-3~ $a\e\\" # set screen title.  Fix vim: ".
+
+    #echo -ne "\ek${1%% *}\e\\"
+}
