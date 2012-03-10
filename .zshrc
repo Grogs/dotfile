@@ -205,3 +205,9 @@ preexec () {
 
     #echo -ne "\ek${1%% *}\e\\"
 }
+
+zmodload zsh/regex
+if [ ! "$TERM" -regex-match "screen" ]; then
+    screen -xRR
+fi
+
