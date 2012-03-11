@@ -50,7 +50,7 @@ unsetopt bgnice autoparamslash
 zmodload -a zsh/stat stat
 zmodload -a zsh/zpty zpty
 zmodload -a zsh/zprof zprof
-zmodload -ap zsh/mapfile mapfile
+zmodload -a zsh/mapfile mapfile
 
 
 
@@ -182,7 +182,7 @@ export RUBYOPT=rubygems
 export PATH=/opt/local/libexec/gnubin:$PATH
 export PATH=~/bin/Play20:$PATH
 export PATH=/Users/grogs/bin:$PATH
-source /Users/grogs/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #dircolors
 eval `dircolors -b $HOME/.dircolors`
