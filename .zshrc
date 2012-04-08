@@ -91,7 +91,7 @@ alias man='LC_ALL=C LANG=C man'
 alias f=finger
 alias ll='ls -alh'
 alias la='ls -a'
-alias ls='ls -F'
+alias ls='ls -F --color'
 alias lm='ls -ctr'
 alias offlineimap-tty='offlineimap -u TTY.TTYUI'
 alias hnb-partecs='hnb $HOME/partecs/partecs-hnb.xml'
@@ -181,7 +181,7 @@ export RUBYOPT=rubygems
 
 export PATH=/opt/local/libexec/gnubin:$PATH
 export PATH=~/bin/Play20:$PATH
-export PATH=/Users/grogs/bin:$PATH
+export PATH=~/bin:$PATH
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #dircolors
