@@ -8,6 +8,7 @@ ZSH=$HOME/.oh-my-zsh
 #ZSH_THEME="robbyrussell"
 ZSH_THEME="bira"
 
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -53,4 +54,4 @@ export PATH=/Users/grogs/bin:/Users/grogs/bin/Play20:/opt/local/libexec/gnubin:/
 #Auto connect/start single screen session
 zmodload zsh/regex
 
-tmux attach || tmux new
+tmux attach

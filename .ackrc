@@ -1,2 +1,2 @@
---type-set scala=.scala
---type-set sbt=.sbt
+#--type-set scala=.scala
+#--type-set sbt=.sbt
