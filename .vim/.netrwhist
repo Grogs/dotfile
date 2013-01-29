@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Applications/eclipse'
+let g:netrw_dirhist_2='/Users/grogs/proj/Play/project'
+let g:netrw_dirhist_3='/Users/grogs/proj/spray/examples/spray-routing/simple-on-jetty/src/main'

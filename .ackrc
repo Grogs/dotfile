@@ -1,1 +1,2 @@
-proj/dotfile/.ackrc
+#--type-set scala=.scala
+#--type-set sbt=.sbt

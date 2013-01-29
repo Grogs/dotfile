@@ -1,1 +1,2 @@
-proj/dotfile/.globalgitignore
+.DS_Store
+*.swp
