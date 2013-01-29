@@ -1,0 +1,17 @@
+reset=$(print -P '\e[0m')
+
+Black=$(print -P '\e[0;30m')
+Red=$(print -P '\e[0;31m')
+Green=$(print -P '\e[0;32m')
+Yellow=$(print -P '\e[0;33m')
+Blue=$(print -P '\e[0;34m')
+Purple=$(print -P '\e[0;35m')
+Cyan=$(print -P '\e[0;36m')
+White=$(print -P '\e[0;37m')    
+
+Light_Green=$(print -P '\e[1;32m')
+
+
+PS1="╭─${Light_Green}%n${Green}@%m ${Blue}%~${reset}
+╰─$ "
+
