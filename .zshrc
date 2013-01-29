@@ -1,4 +1,4 @@
-# Path to your oh-my-zsh configuration.
+#Z/ Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
@@ -9,18 +9,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="bira"
 
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ll="ls -alh"
-alias la="ls -a"
-alias ls="ls -F --color=always"
-alias vlc="open -a vlc "
-alias sed=gsed
-alias find=gfind
-alias find0="gfind -print0"
-alias xargs0="xargs -0"
-wiki() { dig +short txt "$*".wp.dg.cx; }
+wQ1iki() { dig +short txt "$*".wp.dg.cx; }
 cmdfu(){ wget -qO - "http://www.commandlinefu.com/commands/matching/$@/$(echo -n "$@" | openssl base64)/plaintext"; }
 myip() {dig myip.opendns.com @Resolver1.opendns.com +short}
 setopt vi
@@ -54,6 +43,7 @@ export PATH=/Users/grogs/bin:/Users/grogs/bin/Play20:/opt/local/libexec/gnubin:/
 #Auto connect/start single screen session
 zmodload zsh/regex
 
+source ~/.aliases
 source ~/.prompt
 
 tmux attach
