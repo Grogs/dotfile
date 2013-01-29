@@ -90,3 +90,12 @@ noremap  <buffer> <silent> k gk
 noremap  <buffer> <silent> j gj
 noremap  <buffer> <silent> 0 g0
 noremap  <buffer> <silent> $ g$
+
+
+map <c-n> :tabnew<CR>                                                                      
+map <c-e> :tabe 
+map <c-w> :tabclose<CR>
+map <c-[> :tabprevious<CR>
+map <c-]> :tabnext<CR>
+
+map <leader><leader> :b#<CR>
