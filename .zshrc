@@ -32,13 +32,14 @@ setopt vi
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git vi-mode screen)
+plugins=(git vi-mode )
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/grogs/bin:/Users/grogs/bin/Play20:/opt/local/libexec/gnubin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin/:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/usr/texbin:/usr/X11/bin:/Users/grogs/bin:/Users/grogs/bin/Play20:/opt/local/libexec/gnubin:/opt/local/bin:/opt/local/sbin:/usr/local/sbin/
+export PATH=/Users/grogs/bin/gnutls:/Users/grogs/bin:/Users/grogs/bin/Play20:/opt/local/libexec/gnubin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin/:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/usr/texbin:/usr/X11/bin:/Users/grogs/bin:/Users/grogs/bin/Play20:/opt/local/libexec/gnubin:/opt/local/bin:/opt/local/sbin:/usr/local/sbin/
 
+export LS_COLORS=$LSCOLORS
 
 #Auto connect/start single screen session
 zmodload zsh/regex
