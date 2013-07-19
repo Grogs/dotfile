@@ -1,4 +1,6 @@
-dotfiles=~/.dotfile
+#!env zsh
+
+dotfiles=`pwd`
 
 #Move dotfile into repository and create a symlink in its' place
 mvdot() {
@@ -14,4 +16,6 @@ mvdot() {
 sync-dotfiles() {
   for dotfile in $dotfiles/.*; ln -si $dotfile 
 }
+
+sync-dotfiles
 
