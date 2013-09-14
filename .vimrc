@@ -53,3 +53,26 @@ noremap  <buffer> <silent> $ g$
 map <c-n> :tabnew<CR>                                                                      
 map <c-e> :tabe 
 
+imap <c-s> :w
+
+let g:airline_powerline_fonts = 1 
+let g:airline_theme="jellybeans"
+
+if has("gui_macvim")
+    let g:airline_theme="powerlineish"
+    set guifont=Inconsolata\ for\ Powerline:h16
+    colorscheme wombat
+endif
+
+call vundle#rc()
+Bundle 'gmarik/vundle'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'derekwyatt/vim-scala'
+Bundle 'groovy.vim'
+Bundle 'tfnico/vim-gradle'
+
+
+

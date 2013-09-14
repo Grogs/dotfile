@@ -13,3 +13,4 @@ alias tree="tree -C"
 
 alias vlc="open -a vlc "
 alias st="open -a SourceTree "
+alias sb="open -a \"Sublime Text 2\" "
