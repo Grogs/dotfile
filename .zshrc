@@ -1,6 +1,6 @@
 # Plugins; see avialable in ~/.oh-my-zsh/plugins/
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git vi-mode git-flow brew)
+plugins=(git vi-mode git-flow brew gradle)
 
 #Z/ Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -10,7 +10,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="bira"
+#ZSH_THEME="bira"
 
 
 wQ1iki() { dig +short txt "$*".wp.dg.cx; }
@@ -26,7 +26,7 @@ setopt extended_glob
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
+#DISABLE_LS_COLORS="true"
 
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -34,18 +34,16 @@ setopt extended_glob
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 # COMPLETION_WAITING_DOTS="true"
 
-source $ZSH/oh-my-zsh.sh
-
 # Customize to your needs...
 export PATH=/Users/grogs/bin/gnutls:/Users/grogs/bin:/Users/grogs/bin/Play20:/opt/local/libexec/gnubin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin/:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/usr/texbin:/usr/X11/bin:/Users/grogs/bin:/Users/grogs/bin/Play20:/opt/local/libexec/gnubin:/opt/local/bin:/opt/local/sbin:/usr/local/sbin/:/usr/local/share/python/
 
 #Color ls output
 eval "$(dircolors)"
 
-#Auto connect/start single screen session
 zmodload zsh/regex
 
-source ~/.aliases
-source ~/.prompt
+source ~/.aliases 
+source $ZSH/oh-my-zsh.sh
+source ~/.prompt #Override omz prompt. I don't always have omz installed.
 
 tmux attach

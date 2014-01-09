@@ -1,9 +1,13 @@
-alias ls="ls -F --color=always"
+alias ls="ls -F"
 alias l=ls
 alias ll="ls -alh"
 alias la="ls -a"
-alias sed=gsed
-alias find=gfind
+
+if [ $(uname -s) == "Darwin" ]; then
+    alias sed=gsed
+    alias find=gfind
+fi
+
 alias find0="gfind -print0"
 alias xargs0="xargs -0"
 
@@ -14,3 +18,4 @@ alias tree="tree -C"
 alias vlc="open -a vlc "
 alias st="open -a SourceTree "
 alias sb="open -a \"Sublime Text 2\" "
+alias spotify="osascript ~/proj/SpotifyControl.scpt" 
