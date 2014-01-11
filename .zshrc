@@ -19,6 +19,8 @@ myip() {dig myip.opendns.com @Resolver1.opendns.com +short}
 setopt vi
 setopt extended_glob
 
+setopt nopromptcr
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -46,4 +48,4 @@ source ~/.aliases
 source $ZSH/oh-my-zsh.sh
 source ~/.prompt #Override omz prompt. I don't always have omz installed.
 
-tmux attach
+#tmux attach

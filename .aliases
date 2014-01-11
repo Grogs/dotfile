@@ -3,7 +3,7 @@ alias l=ls
 alias ll="ls -alh"
 alias la="ls -a"
 
-if [ $(uname -s) == "Darwin" ]; then
+if [[ $(uname -s) == "Darwin" ]]; then
     alias sed=gsed
     alias find=gfind
 fi
