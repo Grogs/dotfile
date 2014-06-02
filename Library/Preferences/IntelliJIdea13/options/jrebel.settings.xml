@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="JRebel Persistent Settings">
+    <option name="disabled">
+      <map>
+        <entry key="notify.achievements" value="true" />
+      </map>
+    </option>
+  </component>
+</application>
+

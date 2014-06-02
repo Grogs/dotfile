@@ -73,6 +73,17 @@ Bundle 'FuzzyFinder'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'groovy.vim'
 Bundle 'tfnico/vim-gradle'
+Bundle 'bling/vim-bufferline'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-fireplace'
+Bundle 'guns/vim-clojure-static'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'vim-scripts/paredit.vim'
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 
 
 
