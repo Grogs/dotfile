@@ -53,3 +53,4 @@ source ~/.prompt #Override omz prompt. I don't always have omz installed.
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" #Hack from http://stackoverflow.com/a/16103755/126583
 
+precmd() { print "" } #dirty hack
