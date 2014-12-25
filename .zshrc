@@ -49,3 +49,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/.prompt #Override omz prompt. I don't always have omz installed.
 
 #tmux attach
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" #Hack from http://stackoverflow.com/a/16103755/126583
+
