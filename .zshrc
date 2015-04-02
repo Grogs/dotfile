@@ -44,11 +44,15 @@ eval "$(dircolors)"
 
 zmodload zsh/regex
 
+#Nicer searching
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+bindkey '^R' history-incremental-search-backward
+
+#Imports
 source ~/.aliases 
 source $ZSH/oh-my-zsh.sh
 source ~/.prompt #Override omz prompt. I don't always have omz installed.
-
-#tmux attach
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" #Hack from http://stackoverflow.com/a/16103755/126583
