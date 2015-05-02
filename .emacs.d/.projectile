@@ -1,3 +1,10 @@
-/elpa
-/savefile
-/.cask
+-/semanticdb
+-/url
+-/edts
+-/elpa
+-/.cache
+-ac-comphist.dat
+-.emacs.desktop
+-.emacs.desktop.lock
+-.smex-items
+-*.elc
