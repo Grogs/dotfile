@@ -71,6 +71,7 @@ Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'derekwyatt/vim-scala'
+Bundle 'vim-scripts/dbext.vim'
 Bundle 'groovy.vim'
 Bundle 'tfnico/vim-gradle'
 Bundle 'bling/vim-bufferline'
@@ -79,6 +80,17 @@ Bundle 'tpope/vim-fireplace'
 Bundle 'guns/vim-clojure-static'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'vim-scripts/paredit.vim'
+Bundle 'tpope/vim-surround'
+Bundle 'majutsushi/tagbar'
+Bundle 'megaannum/vimside'
+Bundle 'Shougo/vimproc'
+Bundle 'Shougo/vimshell'
+Bundle 'aemoncannon/ensime'
+Bundle 'mattn/emmet-vim'
+
+
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound

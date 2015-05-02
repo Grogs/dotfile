@@ -4,10 +4,14 @@ ZSH_THEME_GIT_PROMPT_PREFIX="%{$FG[238]%}<"
 ZSH_THEME_GIT_PROMPT_SUFFIX="> %{$reset_color%}"
 
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
-    host=magenta
+    host_color=magenta
 else
-    host=green
+    host_color=green
 fi
 
-PS1="╭─$fg_bold[green]%n$fg_no_bold[green]@$fg_no_bold[$host]%m $fg_no_bold[blue]%~$reset_color $(git_prompt_info)
+user=$fg_bold[green]%n$fg_no_bold[green]
+host=$fg_no_bold[$host_color]%m
+dir=$fg_no_bold[blue]%~$reset_color
+
+PS1="╭─$user@$host $dir $(git_prompt_info)
 ╰─$ "
