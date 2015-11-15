@@ -1,6 +1,6 @@
 # Plugins; see avialable in ~/.oh-my-zsh/plugins/
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git vi-mode git-flow brew gradle)
+plugins=(git git-flow brew gradle)
 
 #Z/ Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -16,7 +16,7 @@ ZSH=$HOME/.oh-my-zsh
 wQ1iki() { dig +short txt "$*".wp.dg.cx; }
 cmdfu(){ wget -qO - "http://www.commandlinefu.com/commands/matching/$@/$(echo -n "$@" | openssl base64)/plaintext"; }
 myip() {dig myip.opendns.com @Resolver1.opendns.com +short}
-setopt vi
+setopt emacs
 setopt extended_glob
 
 setopt nopromptcr
