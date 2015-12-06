@@ -1,6 +1,5 @@
 /[^.]*
-*.elc
-.netrwhist
+/.netrwhist
 /.ivy2
 /.npm
 /.viminfo
@@ -8,7 +7,6 @@
 /.psql_history
 /.gradle
 /.gem
-/.vim/bundle/*
 /.dropbox
 /.docker
 /.cache
