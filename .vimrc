@@ -65,6 +65,7 @@ if has("gui_macvim")
 endif
 
 call vundle#rc()
+Bundle 'ensime/ensime-vim'
 Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'git://git.wincent.com/command-t.git'
