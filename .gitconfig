@@ -1,0 +1,16 @@
+[user]
+	name = Greg Dorrell
+	email = greg@dorrell.me
+[core]
+	excludesfile = /Users/grogs/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+  br = branch
+  st = status
+  mt = mergetool
+  co = checkout
