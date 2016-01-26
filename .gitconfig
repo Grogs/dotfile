@@ -1,16 +1,25 @@
 [user]
 	name = Greg Dorrell
-	email = greg@dorrell.me
+	email = Greg@Dorrell.me
+
+[alias]
+    st = status
+    br = branch
+    co = checkout
+    cp = cherry-pick
+    df = diff
+    lg = log -p
+    mt = mergetool
+    ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+
+
+[mergetool "p4merge"]
+    cmd = /Applications/p4merge.app/Contents/MacOS/p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+    keepTemporaries = false
+    trustExitCode = false
+    keepBackup = false
+
 [core]
 	excludesfile = /Users/grogs/.gitignore_global
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-[alias]
-  br = branch
-  st = status
-  mt = mergetool
-  co = checkout
+
