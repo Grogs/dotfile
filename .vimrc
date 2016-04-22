@@ -65,6 +65,7 @@ if has("gui_macvim")
 endif
 
 call vundle#rc()
+Bundle 'flazz/vim-colorschemes'
 Bundle 'ensime/ensime-vim'
 Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-easymotion'
