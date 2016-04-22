@@ -37,10 +37,10 @@ setopt nopromptcr
 # COMPLETION_WAITING_DOTS="true"
 
 # Customize to your needs...
-export PATH=/Users/grogs/bin/gnutls:/Users/grogs/bin:/Users/grogs/bin/Play20:/opt/local/libexec/gnubin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin/:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/usr/texbin:/usr/X11/bin:/Users/grogs/bin:/Users/grogs/bin/Play20:/opt/local/libexec/gnubin:/opt/local/bin:/opt/local/sbin:/usr/local/sbin/:/usr/local/share/python/
+export PATH=~/bin/gnutls:~/bin:/opt/local/libexec/gnubin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin/:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/usr/texbin:/usr/X11/bin:~/bin/Play20:/opt/local/libexec/gnubin:/opt/local/bin:/opt/local/sbin:/usr/local/sbin/:/usr/local/share/python/
 
 #Color ls output
-eval "$(dircolors)"
+eval "$(dircolors || gdircolors)"
 
 zmodload zsh/regex
 
