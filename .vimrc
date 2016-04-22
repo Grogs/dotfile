@@ -1,10 +1,11 @@
 set nocompatible
 syntax on
 set mouse=a
-colorscheme molokai
 
 call pathogen#infect()
 filetype plugin indent on
+
+colorscheme wombat256mod
 
 set modelines=0
 
