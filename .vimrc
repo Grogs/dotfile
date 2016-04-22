@@ -2,7 +2,33 @@ set nocompatible
 syntax on
 set mouse=a
 
-call pathogen#infect()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+""Bundle 'aemoncannon/ensime'
+""Bundle 'ensime/ensime-vim'
+Bundle 'FuzzyFinder'
+Bundle 'L9'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Shougo/vimproc'
+Bundle 'Shougo/vimshell'
+Bundle 'bling/vim-bufferline'
+Bundle 'derekwyatt/vim-scala'
+Bundle 'flazz/vim-colorschemes'
+Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'gmarik/vundle'
+Bundle 'groovy.vim'
+Bundle 'guns/vim-clojure-static'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'majutsushi/tagbar'
+Bundle 'mattn/emmet-vim'
+Bundle 'megaannum/vimside'
+Bundle 'tfnico/vim-gradle'
+Bundle 'tpope/vim-fireplace'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
+Bundle 'vim-scripts/dbext.vim'
+Bundle 'vim-scripts/paredit.vim'
+call vundle#end()
 filetype plugin indent on
 
 colorscheme wombat256mod
@@ -64,32 +90,6 @@ if has("gui_macvim")
     set guifont=Inconsolata\ for\ Powerline:h16
     colorscheme wombat
 endif
-
-call vundle#rc()
-Bundle 'flazz/vim-colorschemes'
-Bundle 'ensime/ensime-vim'
-Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'git://git.wincent.com/command-t.git'
-Bundle 'L9'
-Bundle 'FuzzyFinder'
-Bundle 'derekwyatt/vim-scala'
-Bundle 'vim-scripts/dbext.vim'
-Bundle 'groovy.vim'
-Bundle 'tfnico/vim-gradle'
-Bundle 'bling/vim-bufferline'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-fireplace'
-Bundle 'guns/vim-clojure-static'
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'vim-scripts/paredit.vim'
-Bundle 'tpope/vim-surround'
-Bundle 'majutsushi/tagbar'
-Bundle 'megaannum/vimside'
-Bundle 'Shougo/vimproc'
-Bundle 'Shougo/vimshell'
-Bundle 'aemoncannon/ensime'
-Bundle 'mattn/emmet-vim'
 
 
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
