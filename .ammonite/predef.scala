@@ -24,5 +24,4 @@ implicit class AdditionalLoads(load: ammonite.repl.frontend.Load) {
   def kafka = load.module(home/".ammonite"/"kafka.scala")
 }
 
-
 implicit val path = cwd
