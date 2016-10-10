@@ -2,6 +2,7 @@ alias ls="ls -F"
 alias l=ls
 alias ll="ls -alh"
 alias la="ls -a"
+alias ltr="ls -ltr"
 
 if [[ $(uname -s) == "Darwin" ]]; then
     alias sed=gsed
