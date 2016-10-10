@@ -6,7 +6,6 @@ alias la="ls -a"
 if [[ $(uname -s) == "Darwin" ]]; then
     alias sed=gsed
     alias find=gfind
-    alias docker="DOCKER_HOST=tcp:// docker"
 fi
 
 alias find0="gfind -print0"
