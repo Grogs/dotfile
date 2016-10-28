@@ -2,11 +2,11 @@ alias ls="ls -F"
 alias l=ls
 alias ll="ls -alh"
 alias la="ls -a"
+alias ltr="ls -ltr"
 
 if [[ $(uname -s) == "Darwin" ]]; then
-    alias sed=gsed
-    alias find=gfind
-    alias docker="DOCKER_HOST=tcp:// docker"
+    #alias sed=gsed
+    #alias find=gfind
 fi
 
 alias find0="gfind -print0"
@@ -16,8 +16,22 @@ alias serve="python -m SimpleHTTPServer"
 
 alias tree="tree -C"
 
-alias vlc="open -a vlc "
-alias st="open -a SourceTree "
-alias sb="open -a \"Sublime Text 2\" "
-alias spotify="osascript ~/proj/SpotifyControl.scpt" 
-alias scalaz="scala -cp ~/Downloads/scalaz-core_2.11-7.1.0.jar"
+alias vlc="open -na vlc "
+
+alias e=ranger
+
+#override omz git alias
+alias gbr="git branch"
+
+#mvn hcom
+alias mi='mvn install -Part-uk -T 1.5C'
+alias mis='mvn install -Part-uk -DskipTests -T 1.5C'
+alias mci='mvn clean install -Part-uk -T 1.5C'
+alias mcis='mvn clean install -Part-uk -DskipTests -T 1.5C'
+alias mcid='mvn clean install -Part-uk,docker'
+alias mdt='mvn dependency:tree -Part-uk'
+
+
+alias argo="once_a_day docker pull registry.docker.hcom/hotels/argocli:latest && docker run -i --rm registry.docker.hcom/hotels/argocli:latest"
+
+alias splprd=sshuttle -r chexlnxjmp003.ch.expeso.com 10.185.39.86/32 10.185.34.30/32 10.188.132.33/32
