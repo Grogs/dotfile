@@ -1,0 +1,4 @@
+#setenv("GNUTERM", "qt")
+PS1('❯❯ ')
+
+

@@ -8,6 +8,7 @@ import ammonite.shell._
 ammonite.shell.Configure(repl, wd)
 
 
+
 load.ivy("org.scalaz" %% "scalaz-core" % "7.1.1")
 load.ivy("org.scalaj" %% "scalaj-http" % "2.2.0")
 load.ivy("org.jsoup" % "jsoup" % "1.8.3")
@@ -23,4 +24,4 @@ implicit class AdditionalLoads(load: ammonite.repl.frontend.Load) {
   def kafka = load.module(home/".ammonite"/"kafka.scala")
 }
 
-implicit val wd: Path = cwd
+implicit val path = cwd
