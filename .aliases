@@ -22,16 +22,3 @@ alias e=ranger
 
 #override omz git alias
 alias gbr="git branch"
-
-#mvn hcom
-alias mi='mvn install -Part-uk -T 1.5C'
-alias mis='mvn install -Part-uk -DskipTests -T 1.5C'
-alias mci='mvn clean install -Part-uk -T 1.5C'
-alias mcis='mvn clean install -Part-uk -DskipTests -T 1.5C'
-alias mcid='mvn clean install -Part-uk,docker'
-alias mdt='mvn dependency:tree -Part-uk'
-
-
-alias argo="once_a_day docker pull registry.docker.hcom/hotels/argocli:latest && docker run -i --rm registry.docker.hcom/hotels/argocli:latest"
-
-alias splprd=sshuttle -r chexlnxjmp003.ch.expeso.com 10.185.39.86/32 10.185.34.30/32 10.188.132.33/32
