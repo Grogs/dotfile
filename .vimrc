@@ -6,6 +6,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 ""Bundle 'aemoncannon/ensime'
 ""Bundle 'ensime/ensime-vim'
+Bundle 'elixir-lang/vim-elixir'
 Bundle 'FuzzyFinder'
 Bundle 'L9'
 Bundle 'Lokaltog/vim-easymotion'
