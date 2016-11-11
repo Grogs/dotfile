@@ -6,8 +6,8 @@ import org.apache.log4j.Level
 
 Logger.getLogger("org.apache").setLevel(Level.WARN)
 
-load.ivy( "org.apache.spark" % "spark-core_2.11" % "1.6.0")
-load.ivy( "org.apache.spark" % "spark-sql_2.11" % "1.6.0")
+interp.load.ivy( "org.apache.spark" % "spark-core_2.11" % "1.6.0")
+interp.load.ivy( "org.apache.spark" % "spark-sql_2.11" % "1.6.0")
 
 @
 
