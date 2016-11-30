@@ -14,8 +14,9 @@ implicit class AdditionalLoads(load: ammonite.runtime.Load) {
   def spark = interp.load.module(home/".ammonite"/"spark.scala")
   def kafka = interp.load.module(home/".ammonite"/"kafka.scala")
 }
-
 @
 import ammonite.ops._
 import ammonite.ops.ImplicitWd._
-
+import cats._
+import cats.instances.all._
+import cats.syntax.all._

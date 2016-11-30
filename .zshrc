@@ -22,6 +22,8 @@ setopt extended_glob
 
 setopt nopromptcr
 
+export EDITOR=vim
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 

@@ -1,6 +1,8 @@
 set nocompatible
 syntax on
 set mouse=a
+set relativenumber
+set number
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -58,8 +60,6 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-"" set relativenumber
-"" set undofile
 
 ""searching
 nnoremap / /\v
