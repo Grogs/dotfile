@@ -1,6 +1,6 @@
 # Plugins; see avialable in ~/.oh-my-zsh/plugins/
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git git-flow brew autojump mvn)
+plugins=(git git-flow brew autojump mvn docker gnu-utils httpie sbt scala)
 
 #Z/ Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -13,7 +13,7 @@ ZSH=$HOME/.oh-my-zsh
 #ZSH_THEME="bira"
 
 
-wQ1iki() { dig +short txt "$*".wp.dg.cx; }
+wiki() { dig +short txt "$*".wp.dg.cx; }
 cmdfu(){ wget -qO - "http://www.commandlinefu.com/commands/matching/$@/$(echo -n "$@" | openssl base64)/plaintext"; }
 myip() {dig myip.opendns.com @Resolver1.opendns.com +short}
 
@@ -87,9 +87,3 @@ _tm() {
 }
 compctl -K _tm tm
 
-
-PATH="/Users/grdorrell/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/Users/grdorrell/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/Users/grdorrell/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/Users/grdorrell/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/grdorrell/perl5"; export PERL_MM_OPT;
