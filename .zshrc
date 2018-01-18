@@ -1,6 +1,6 @@
 # Plugins; see avialable in ~/.oh-my-zsh/plugins/
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git git-flow brew autojump mvn docker gnu-utils httpie sbt scala)
+plugins=(git git-flow autojump mvn docker gnu-utils httpie sbt scala)
 
 #Z/ Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
