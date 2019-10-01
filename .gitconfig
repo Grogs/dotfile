@@ -28,3 +28,5 @@
 	trustExitCode = false
 [mergetool]
 	keepBackup = false
+[user]
+	name = Greg Dorrell
