@@ -42,7 +42,7 @@ export PATH=~/bin/gnutls:~/bin:/opt/local/libexec/gnubin:/opt/local/bin:/opt/loc
 fpath=(~/bin/compdef $fpath)
 
 #Color ls output
-eval "$(dircolors || gdircolors)"
+eval "$(gdircolors || dircolors )"
 
 zmodload zsh/regex
 
@@ -90,3 +90,16 @@ compctl -K _tm tm
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+PATH="/Users/grdorrell/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/Users/grdorrell/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/grdorrell/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/grdorrell/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/grdorrell/perl5"; export PERL_MM_OPT;
+
+# Deep learning course
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+
+[ -s "/Users/gredorrell/.jabba/jabba.sh" ] && source "/Users/gredorrell/.jabba/jabba.sh"
+>>>>>>> Stashed changes

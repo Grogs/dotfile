@@ -29,6 +29,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/dbext.vim'
 Bundle 'vim-scripts/paredit.vim'
+Bundle 'scrooloose/nerdtree'
 call vundle#end()
 filetype plugin indent on
 
