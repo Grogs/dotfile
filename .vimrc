@@ -33,7 +33,7 @@ Bundle 'scrooloose/nerdtree'
 call vundle#end()
 filetype plugin indent on
 
-colorscheme wombat256mod
+colorscheme molokai
 
 set modelines=0
 
