@@ -1,7 +1,3 @@
-[user]
-	name = Greg Dorrell
-	email = Greg@Dorrell.me
-
 [alias]
     st = status
     br = branch
@@ -21,7 +17,9 @@
     keepBackup = false
 
 [core]
-	excludesfile = /Users/grogs/.gitignore_global
+	excludesfile = /Users/gredorrell/.gitignore_global
+	autocrlf = input
+	askpass = git-gui--askpass
 
 [merge]
 	tool = p4mergetool
@@ -30,3 +28,5 @@
 	trustExitCode = false
 [mergetool]
 	keepBackup = false
+[user]
+	name = Greg Dorrell

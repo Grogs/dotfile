@@ -1,6 +1,6 @@
 autoload -U colors && colors
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$FG[238]%}<"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$FG[248]%}<"
 ZSH_THEME_GIT_PROMPT_SUFFIX="> %{$reset_color%}"
 
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then

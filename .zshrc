@@ -42,7 +42,7 @@ export PATH=~/bin/gnutls:~/bin:/opt/local/libexec/gnubin:/opt/local/bin:/opt/loc
 fpath=(~/bin/compdef $fpath)
 
 #Color ls output
-eval "$(dircolors || gdircolors)"
+eval "$(gdircolors || dircolors )"
 
 zmodload zsh/regex
 
@@ -89,7 +89,6 @@ compctl -K _tm tm
 
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
